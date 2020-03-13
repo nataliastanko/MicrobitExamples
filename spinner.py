@@ -73,4 +73,4 @@ spinner12 = Image("07900:"
                  "00000")
 
 spinner = [spinner1, spinner2, spinner3, spinner4, spinner5, spinner6, spinner7, spinner8, spinner9, spinner10, spinner11, spinner12]
-display.show(spinner, delay=500)
+display.show(spinner, delay=100, wait=False, loop=True)
