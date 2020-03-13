@@ -2,7 +2,12 @@ from microbit import *
 
 while True:
     gesture = accelerometer.current_gesture()
-    if gesture == "face up":
+
+    if button_a.is_pressed():
+        display.show(Image.MUSIC_CROTCHET)
+    elif button_b.is_pressed():
+        display.show(Image.MUSIC_QUAVER)
+    elif gesture == "face up":
         display.show(Image.HEART)
     elif gesture == "face down":
         display.show(Image.GIRAFFE)
